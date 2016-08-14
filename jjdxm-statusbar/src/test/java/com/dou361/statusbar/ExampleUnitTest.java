@@ -1,4 +1,4 @@
-package com.dou361.kitkatstatusbar;
+package com.dou361.statusbar;
 
 import org.junit.Test;
 

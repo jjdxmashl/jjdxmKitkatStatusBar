@@ -1,18 +1,46 @@
 apply plugin: 'com.android.application'
 
+Properties props = new Properties();
+props.load(new FileInputStream(file(rootProject.file("signing.properties"))))
+
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+
+    signingConfigs {
+        release {
+            keyAlias props['signing.alias']
+            keyPassword props['signing.password']
+            storeFile file(rootProject.file("debug.keystore"))
+            storePassword props['signing.password']
+        }
+
+        debug {
+            keyAlias props['signing.jjdxm_alias']
+            keyPassword props['signing.jjdxm_password']
+            storeFile file(rootProject.file("debug.keystore"))
+            storePassword props['signing.jjdxm_password']
+        }
+    }
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.dou361.kitkatstatusbar"
-        minSdkVersion 15
-        targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        applicationId "com.dou361.jjdxm_statusbar"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
     }
     buildTypes {
+
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
         release {
+            signingConfig signingConfigs.release
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
@@ -20,8 +48,10 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.jakewharton:butterknife:7.0.1'
+    compile rootProject.ext.jjdxm_v7
+    compile 'com.android.support:design:23.3.0'
+    compile project(':jjdxm-statusbar')
 }

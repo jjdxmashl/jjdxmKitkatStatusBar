@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jjdxmKitkatStatusBar.iml" filepath="$PROJECT_DIR$/jjdxmKitkatStatusBar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jjdxm-statusbar/jjdxm-statusbar.iml" filepath="$PROJECT_DIR$/jjdxm-statusbar/jjdxm-statusbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jjdxm_statusbar.iml" filepath="$PROJECT_DIR$/jjdxm_statusbar.iml" />
     </modules>
   </component>
 </project>

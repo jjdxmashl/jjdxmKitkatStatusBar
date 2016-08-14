@@ -1,4 +1,4 @@
-package com.dou361.kitkatstatusbar;
+package com.dou361.jjdxm_statusbar;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
