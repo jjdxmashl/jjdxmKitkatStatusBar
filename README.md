@@ -23,8 +23,8 @@
 ## Screenshots ##
 
 <img src="https://raw.githubusercontent.com/jjdxmashl/jjdxm_statusbar/master/screenshots/icon01.gif" width="300"> 
-<img src="https://raw.githubusercontent.com/jjdxmashl/jjdxm_statusbar/master/screenshots/icon02.png" width="300"> 
-<img src="https://raw.githubusercontent.com/jjdxmashl/jjdxm_statusbar/master/screenshots/icon01.gif" width="300"> 
+<img src="https://raw.githubusercontent.com/jjdxmashl/jjdxm_statusbar/master/screenshots/icon02.gif" width="300"> 
+<img src="https://raw.githubusercontent.com/jjdxmashl/jjdxm_statusbar/master/screenshots/icon01.png" width="300"> 
 <img src="https://raw.githubusercontent.com/jjdxmashl/jjdxm_statusbar/master/screenshots/icon02.png" width="300">
 <img src="https://raw.githubusercontent.com/jjdxmashl/jjdxm_statusbar/master/screenshots/icon03.png" width="300"> 
 <img src="https://raw.githubusercontent.com/jjdxmashl/jjdxm_statusbar/master/screenshots/icon04.png" width="300">
