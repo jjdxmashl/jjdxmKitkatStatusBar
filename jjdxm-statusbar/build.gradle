@@ -9,7 +9,7 @@ ext {
     jjdxm_groupId = 'com.dou361.statusbar'
     jjdxm_artifactId = 'jjdxm-statusbar'
 
-    jjdxm_libraryVersion = '1.0.0'
+    jjdxm_libraryVersion = '1.0.1'
     jjdxm_libraryName = 'jjdxm-statusbar'
     jjdxm_libraryDescription = 'this is a statusbar library of the application'
 
@@ -53,4 +53,4 @@ dependencies {
 }
 
 //apply from: 'https://raw.githubusercontent.com/jjdxmashl/jjdxm_ecodingprocess/master/bulidlib.gradle'
-apply from: 'https://raw.githubusercontent.com/jjdxmashl/jjdxm_ecodingprocess/master/bintray.gradle'
+//apply from: 'https://raw.githubusercontent.com/jjdxmashl/jjdxm_ecodingprocess/master/bintray.gradle'

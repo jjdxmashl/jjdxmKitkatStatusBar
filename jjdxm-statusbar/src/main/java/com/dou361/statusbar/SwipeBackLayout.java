@@ -84,24 +84,8 @@ public class SwipeBackLayout extends FrameLayout {
         mTouchSlop = ViewConfiguration.get(context).getScaledTouchSlop();
         mScroller = new Scroller(context);
 
-        mShadowDrawable = getResources().getDrawable(getDrawableResourceIdByName(context, "statusbar_shadow_left"));
+        mShadowDrawable = getResources().getDrawable(R.drawable.statusbar_shadow_left);
     }
-
-    private int getDrawableResourceIdByName(Context context, String name) {
-        int id = 0;
-        String packageName = context.getPackageName();
-        try {
-            String var10 = packageName + ".R$drawable";
-            Class desireClass = Class.forName(var10);
-            if (desireClass != null) {
-                id = desireClass.getField(name).getInt(desireClass);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return id;
-    }
-
 
     public void attachToActivity(Activity activity, CloseMode mode) {
         mActivity = activity;

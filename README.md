@@ -48,19 +48,14 @@ or Gradle:
 
 历史版本：
 
+    compile 'com.dou361.statusbar:jjdxm-statusbar:1.0.1'
 	compile 'com.dou361.statusbar:jjdxm-statusbar:1.0.0'
 
-jjdxm-statusbar requires at minimum Java 15 or Android 4.0.
+jjdxm-statusbar requires at minimum Java 9 or Android 2.3.
 
 [架包的打包引用以及冲突解决][jaraar]
 
 ## Proguard ##
-
-根据你的混淆器配置和使用，您可能需要在你的proguard文件内配置以下内容：
-
-	-keep com.dou361.statusbar.** {
-    *;
-	}
 
 
 [AndroidStudio代码混淆注意的问题][minify]
@@ -92,6 +87,8 @@ jjdxm-statusbar requires at minimum Java 15 or Android 4.0.
 ## More Actions ##
 
 ## ChangeLog ##
+
+2016.12.06 1.0.1版本打包，移除反射
 
 ## About Author ##
 
